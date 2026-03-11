@@ -1,0 +1,28 @@
+{
+  "name": "01_intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --b",
+    "start": "node dist/strructuredOutput/index.js",
+    "dev": "pnpm run build & pnpm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.32.1+sha512.a706938f0e89ac1456b6563eab4edf1d1faf3368d1191fc5c59790e96dc918e4456ab2e67d613de1043d2e8c81f87303e6b40d4ffeca9df15ef1ad567348f2be",
+  "dependencies": {
+    "@langchain/community": "^1.1.22",
+    "@langchain/core": "^1.1.31",
+    "@langchain/google": "^0.1.5",
+    "@langchain/groq": "^1.1.4",
+    "dotenv": "^17.3.1",
+    "langchain": "^1.2.30",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.4.0"
+  }
+}
