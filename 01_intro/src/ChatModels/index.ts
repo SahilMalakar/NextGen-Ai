@@ -19,7 +19,11 @@ async function main() {
   // -----------------------------
   const modelGroq = new ChatGroq({
     model: "openai/gpt-oss-120b",
-    temperature: 0.9,
+    temperature: 0.9, // temperature doesnt interfer with creativity
+
+    // // temperature interfer with randomness of the response
+    // it make the response deterministic
+    // on same input multiple times it give doesnt give different response
     maxRetries: 2,
   });
 
