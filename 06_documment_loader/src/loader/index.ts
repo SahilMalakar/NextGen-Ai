@@ -8,6 +8,8 @@ import { config } from "../index.js";
 import { ChatGroq } from "@langchain/groq";
 import { PromptTemplate } from "@langchain/core/prompts";
 import { StringOutputParser } from "@langchain/core/output_parsers";
+import { GithubRepoLoader } from "@langchain/community/document_loaders/web/github";
+import { YoutubeLoader } from "@langchain/community/document_loaders/web/youtube";
 
 if (!config.apiKeyUnstructured || !config.apiKeyGroq) {
   console.log("API key is missing");
